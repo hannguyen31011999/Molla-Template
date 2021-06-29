@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Store</title>
+    <title>Game - Molla</title>
     <!-- Logo -->
-    <link rel="shortcut icon" href="./assets/img/logo/honda_logo_icon_145821.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32-1.png" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fontawesome -->
@@ -17,10 +17,606 @@
 </head>
 
 <body>
+    <div class="page__wrapper container-fluid">
+        <header id="header">
+            <div class="container">
+                <div class="header__top ">
+                    <div class="header__contact">
+                        <a href="#">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>&nbsp;Call:&nbsp;+0123 456 789</span>
+                        </a>
+                    </div>
+                    <div class="header__translate">
+                        <ul>
+                            <li class="header__top--item">
+                                <a href="#" class="header__top--navlink">USD<i class="fa fa-angle-down"></i></a>
+                                <ul class="header__top--menu">
+                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Eur</a>
+                                    </li>
+                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Usd</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__top--item">
+                                <a href="#" class="header__top--navlink">English<i class="fa fa-angle-down"></i></a>
+                                <ul class="header__top--menu">
+                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">English</a>
+                                    </li>
+                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">French</a>
+                                    </li>
+                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Spanish</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__top--item">
+                                <a href="#" class="header__top--navlink">
+                                    <span>Sign In / Sign Up</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__center row">
+                    <div class="col-6 col-lg-3 header__center--left">
+                        <button id="showMenu"><i class="fa fa-bars"></i></button>
+                        <a href="#">
+                            <img src="./assets/img/retina_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 header__center--seach">
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary header__top--btn" type="button"><i
+                                    class="fa fa-search"></i></button>
+                            <input type="text" class="form-control header__top--input" placeholder="Seach">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 header__center--right">
+                        <div class="header__top--itemIcon">
+                            <a href="#">
+                                <div class="header__top--icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="header__top--label">
+                                    <span>Account</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header__top--itemIcon wish">
+                            <a href="#">
+                                <div class="header__top--icon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="header__top--label">
+                                    <span>Wish</span>
+                                </div>
+                            </a>
+                            <div class="header__top--count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="header__top--itemIcon cart">
+                            <a href="#">
+                                <div class="header__top--icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="header__top--label">
+                                    <span>Cart</span>
+                                </div>
+                            </a>
+                            <div class="header__top--cart">
+                                <div class="cart__item">
+                                    <div class="cart__item--title">
+                                        <a href="#">
+                                            Borderlands: The Handsome Collection
+                                        </a>
+                                        <p>1 x $59.99</p>
+                                    </div>
+                                    <div class="cart__item--image">
+                                        <a href="#">
+                                            <img src="./assets/img/product-1.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cart__total">
+                                    <div class="cart__total--title">
+                                        <h4>total</h4>
+                                        <p>59.99$</p>
+                                    </div>
+                                    <div class="cart__total--btn">
+                                        <button class="cart__btn--viewCart">View Cart</button>
+                                        <button class="cart__btn--checkOut">
+                                            Checkout
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__top--count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bot">
+                <div class="header__bot--content container">
+                    <ul class="header__bot--menu">
+                        <li class="header__bot--item active"><a href="#" class="header__bot--navlink">home<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="header__bot--pages">
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/1.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        01 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/2.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        02 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/3.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        03 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/4.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        04 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/5.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        05 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/6.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        06 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/7.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        07 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/8.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        08 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/9.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        09 - furniture store
+                                    </figcaption>
+                                </li>
+                                <li class="header__bot--pageItem">
+                                    <figure>
+                                        <img src="./assets/img/10.jpg" alt="">
+
+                                    </figure>
+                                    <figcaption>
+                                        10 - furniture store
+                                    </figcaption>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">shop<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="header__bot--products">
+                                <li class="header__bot--productItem">
+                                    <ul class="header__bot--productChild">
+                                        <li>
+                                            <h4><a href="#">Shop Layouts</a></h4>
+                                        </li>
+                                        <li><a href="#">Shop List</a></li>
+                                        <li><a href="#">Shop Grid 01 Column</a></li>
+                                        <li><a href="#">Shop Grid 02 Column</a></li>
+                                        <li><a href="#">Shop Grid 03 Column</a></li>
+                                        <li><a href="#">Shop Grid 04 Column</a></li>
+                                        <li><a href="#">Shop Grid 05 Column</a></li>
+                                        <li><a href="#">Shop Grid 06 Column</a></li>
+                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                    class="discount">hot</span></a>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#">Shop Slider</a></h4>
+                                        </li>
+                                        <li><a href="#">With Left Slider</a></li>
+                                        <li><a href="#">With Right Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__bot--productItem">
+                                    <ul class="header__bot--productChild">
+                                        <li>
+                                            <h4><a href="#">Shop Layouts</a></h4>
+                                        </li>
+                                        <li><a href="#">Shop List</a></li>
+                                        <li><a href="#">Shop Grid 01 Column</a></li>
+                                        <li><a href="#">Shop Grid 02 Column</a></li>
+                                        <li><a href="#">Shop Grid 03 Column</a></li>
+                                        <li><a href="#">Shop Grid 04 Column</a></li>
+                                        <li><a href="#">Shop Grid 05 Column</a></li>
+                                        <li><a href="#">Shop Grid 06 Column</a></li>
+                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                    class="discount">new</span></a>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#">Shop Slider</a></h4>
+                                        </li>
+                                        <li><a href="#">With Left Slider</a></li>
+                                        <li><a href="#">With Right Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__bot--productItem">
+                                    <img src="./assets/img/menu-img-1.jpg" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">product<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="header__bot--products">
+                                <li class="header__bot--productItem">
+                                    <ul class="header__bot--productChild">
+                                        <li>
+                                            <h4><a href="#">Shop Layouts</a></h4>
+                                        </li>
+                                        <li><a href="#">Shop List</a></li>
+                                        <li><a href="#">Shop Grid 01 Column</a></li>
+                                        <li><a href="#">Shop Grid 02 Column</a></li>
+                                        <li><a href="#">Shop Grid 03 Column</a></li>
+                                        <li><a href="#">Shop Grid 04 Column</a></li>
+                                        <li><a href="#">Shop Grid 05 Column</a></li>
+                                        <li><a href="#">Shop Grid 06 Column</a></li>
+                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                    class="discount">hot</span></a>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#">Shop Slider</a></h4>
+                                        </li>
+                                        <li><a href="#">With Left Slider</a></li>
+                                        <li><a href="#">With Right Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__bot--productItem">
+                                    <ul class="header__bot--productChild">
+                                        <li>
+                                            <h4><a href="#">Shop Layouts</a></h4>
+                                        </li>
+                                        <li><a href="#">Shop List</a></li>
+                                        <li><a href="#">Shop Grid 01 Column</a></li>
+                                        <li><a href="#">Shop Grid 02 Column</a></li>
+                                        <li><a href="#">Shop Grid 03 Column</a></li>
+                                        <li><a href="#">Shop Grid 04 Column</a></li>
+                                        <li><a href="#">Shop Grid 05 Column</a></li>
+                                        <li><a href="#">Shop Grid 06 Column</a></li>
+                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                    class="discount">new</span></a>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#">Shop Slider</a></h4>
+                                        </li>
+                                        <li><a href="#">With Left Slider</a></li>
+                                        <li><a href="#">With Right Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__bot--productItem">
+                                    <img src="./assets/img/menu-img-2.jpg" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">pages<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="header__bot--submenu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Error</a></li>
+                                <li><a href="#">Coming soon</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">element<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="header__bot--submenu">
+                                <li><a href="#">Element 01</a></li>
+                                <li><a href="#">Element 02</a></li>
+                                <li><a href="#">Element 03</a></li>
+                                <li><a href="#">Element 04</a></li>
+                                <li><a href="#">Element 05</a></li>
+                                <li><a href="#">Element 06</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">buy molla <span
+                                    class="discount">hot</span> </a></li>
+                    </ul>
+                    <div class="header__bot--info">
+                        <i class="fab fa-medapps"></i>
+                        <span>CLEARANCE UP TO 30% OFF</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="menu__mobile" id="menu-mobile">
+        <div class="menu__mobile--top">
+            <span class="menu__mobile--close" id="menu__mobile--close">
+                <i class="fa fa-times"></i>
+            </span>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Seach...">
+                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="menu__mobile--bot">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">MAIN MENU</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">CATEGORIES</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <ul class="submenu">
+                        <li class="submenu--item" onclick="clickSubmenu(0)"><a href="#" class="submenu--navlink">Home<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - furniture store<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">03 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">04 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">05 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">06 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">07 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">08 - furniture store<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">10 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">11 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">11 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">12 - furniture store<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">13 - furniture store</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(1)"><a href="#" class="submenu--navlink">Shop<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Shopping<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Shopping<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Shopping<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Shopping</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(2)"><a href="#"
+                                class="submenu--navlink">Product<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Product<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Product<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Product<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Product</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(3)"><a href="#" class="submenu--navlink">Pages<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Page<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Page<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Page<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(4)"><a href="#"
+                                class="submenu--navlink">Element<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Element<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Element<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Element<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Element</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(5)"><a href="#" class="submenu--navlink">Buy
+                                Molla<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Buy Molla<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Buy Molla<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Buy Molla<span
+                                            class="childmenu--active">New</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ul class="submenu">
+                        <li class="submenu--item" onclick="clickSubmenu(6)"><a href="#"
+                                class="submenu--navlink">playstation<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">Game Software<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(7)"><a href="#" class="submenu--navlink">Xbox<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">Game Software<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">Game Console & Accessories<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">nindendo</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">pc gaming</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">phone & tablet</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">pre-owned</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">deals</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">coming soon</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">accessories</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script>
+
+        document.getElementById('showMenu').addEventListener('click', function (e) {
+            var menu = document.getElementById('menu-mobile');
+            var header = document.getElementById('header');
+            var overlay = document.getElementById('overlay');
+            menu.classList.add('menu__mobile--show');
+            header.classList.add('header__show');
+            overlay.style.display = "block";
+        });
+
+        document.getElementById('menu__mobile--close').addEventListener('click', function (e) {
+            isRemove();
+        });
+
+        document.getElementById('overlay').addEventListener('click', function (e) {
+            isRemove();
+        });
+
+        function isRemove() {
+            var menu = document.getElementById('menu-mobile');
+            var header = document.getElementById('header');
+            var overlay = document.getElementById('overlay');
+            menu.classList.remove('menu__mobile--show');
+            header.classList.remove('header__show');
+            overlay.style.display = "none";
+        }
+
+        window.addEventListener("resize", function (event) {
+            var header = document.getElementById('header');
+            if (header.clientWidth > 1199) {
+                isRemove();
+            }
+        })
+
+        var clickSubmenu = function (index) {
+            var submenu = document.getElementsByClassName('submenu--item');
+            var childmenu = document.getElementsByClassName('childmenu');
+            for (let i = 0; i < submenu.length; i++) {
+                if (i === index) {
+                    childmenu[i].classList.toggle('childmenu__show');
+                }
+            }
+        }
+
+
         // var showMenu = function (id) {
         //     var menu = document.getElementById('menu' + id);
         //     menu.classList.toggle('top__show');

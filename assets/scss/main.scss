@@ -1,13 +1,16 @@
-// base
-@import './base/reset';
-@import './base/customize';
-
 // ultils
 @import './ultils/variable';
 @import './ultils/mixin';
 
+// base
+@import './base/reset';
+@import './base/customize';
+
+
 // components
 @import './components/button';
+@import './components/deal';
 
 // layouts
 @import './layouts/header';
+@import './layouts/menu';
