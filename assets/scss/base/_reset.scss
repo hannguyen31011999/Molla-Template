@@ -15,11 +15,17 @@ body {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-.page__wrapper {
-    max-width: 95%;
-    padding: 0;
+
+@include customScroll(6px,$color-text);
+
+.main__page {
+    .page__wrapper {
+        max-width: 95%;
+        padding: 0;
+        background-color: $bg-default;
+    }
 }
 
 .container {

@@ -1,6 +1,5 @@
-@include customScroll(6px,$color-text);
 .menu__mobile {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 300px;
@@ -137,6 +136,14 @@
     }
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-default,0.3);
+    display: none;
+}
 
 @include responsive('large')
 {
@@ -145,15 +152,17 @@
         visibility: visible;
         transform: translateX(0);
     }
+}
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        float: right;
-        background-color: rgba($color-default,0.3);
-        display: none;
+@include responsive('small')
+{
+    .menu__mobile {
+        width: 260px;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .menu__mobile {
+        width: 220px;
     }
 }

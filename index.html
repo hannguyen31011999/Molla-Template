@@ -17,365 +17,563 @@
 </head>
 
 <body>
-    <div class="page__wrapper container-fluid">
-        <header id="header">
-            <div class="container">
-                <div class="header__top ">
-                    <div class="header__contact">
-                        <a href="#">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>&nbsp;Call:&nbsp;+0123 456 789</span>
-                        </a>
+    <div class="main__page">
+        <div class="page__wrapper container-fluid">
+            <header id="header">
+                <div class="container">
+                    <div class="header__top ">
+                        <div class="header__contact">
+                            <a href="#">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>&nbsp;Call:&nbsp;+0123 456 789</span>
+                            </a>
+                        </div>
+                        <div class="header__translate">
+                            <ul>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">USD<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__top--menu">
+                                        <li class="header__top--item1"><a href="#" class="header__top--navlink1">Eur</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#" class="header__top--navlink1">Usd</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">English<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__top--menu">
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">English</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">French</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">Spanish</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">
+                                        <span>Sign In / Sign Up</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="header__translate">
-                        <ul>
-                            <li class="header__top--item">
-                                <a href="#" class="header__top--navlink">USD<i class="fa fa-angle-down"></i></a>
-                                <ul class="header__top--menu">
-                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Eur</a>
-                                    </li>
-                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Usd</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header__top--item">
-                                <a href="#" class="header__top--navlink">English<i class="fa fa-angle-down"></i></a>
-                                <ul class="header__top--menu">
-                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">English</a>
-                                    </li>
-                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">French</a>
-                                    </li>
-                                    <li class="header__top--item1"><a href="#" class="header__top--navlink1">Spanish</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header__top--item">
-                                <a href="#" class="header__top--navlink">
-                                    <span>Sign In / Sign Up</span>
+                    <div class="header__center row">
+                        <div class="col-6 col-lg-3 header__center--left">
+                            <button id="showMenu"><i class="fa fa-bars"></i></button>
+                            <a href="#">
+                                <img src="./assets/img/retina_logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 header__center--seach">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary header__top--btn" type="button"><i
+                                        class="fa fa-search"></i></button>
+                                <input type="text" class="form-control header__top--input" placeholder="Seach">
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 header__center--right">
+                            <div class="header__top--itemIcon">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Account</span>
+                                    </div>
                                 </a>
+                            </div>
+                            <div class="header__top--itemIcon wish">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Wish</span>
+                                    </div>
+                                </a>
+                                <div class="header__top--count">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div class="header__top--itemIcon cart">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Cart</span>
+                                    </div>
+                                </a>
+                                <div class="header__top--cart">
+                                    <div class="cart__item">
+                                        <div class="cart__item--title">
+                                            <a href="#">
+                                                Borderlands: The Handsome Collection
+                                            </a>
+                                            <p>1 x $59.99</p>
+                                        </div>
+                                        <div class="cart__item--image">
+                                            <a href="#">
+                                                <img src="./assets/img/product-1.jpg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart__total">
+                                        <div class="cart__total--title">
+                                            <h4>total</h4>
+                                            <p>59.99$</p>
+                                        </div>
+                                        <div class="cart__total--btn">
+                                            <button class="cart__btn--viewCart">View Cart</button>
+                                            <button class="cart__btn--checkOut">
+                                                Checkout
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__top--count">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bot">
+                    <div class="header__bot--content container">
+                        <ul class="header__bot--menu">
+                            <li class="header__bot--item active"><a href="#" class="header__bot--navlink">home<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--pages">
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/1.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            01 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/2.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            02 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/3.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            03 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/4.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            04 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/5.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            05 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/6.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            06 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/7.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            07 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/8.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            08 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/9.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            09 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/10.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            10 - furniture store
+                                        </figcaption>
+                                    </li>
+                                </ul>
                             </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">shop<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--products">
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">hot</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">new</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <img src="./assets/img/menu-img-1.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">product<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--products">
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">hot</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">new</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <img src="./assets/img/menu-img-2.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">pages<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--submenu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Error</a></li>
+                                    <li><a href="#">Coming soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">element<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--submenu">
+                                    <li><a href="#">Element 01</a></li>
+                                    <li><a href="#">Element 02</a></li>
+                                    <li><a href="#">Element 03</a></li>
+                                    <li><a href="#">Element 04</a></li>
+                                    <li><a href="#">Element 05</a></li>
+                                    <li><a href="#">Element 06</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">buy molla <span
+                                        class="discount">hot</span> </a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="header__center row">
-                    <div class="col-6 col-lg-3 header__center--left">
-                        <button id="showMenu"><i class="fa fa-bars"></i></button>
-                        <a href="#">
-                            <img src="./assets/img/retina_logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 header__center--seach">
-                        <div class="input-group">
-                            <button class="btn btn-outline-secondary header__top--btn" type="button"><i
-                                    class="fa fa-search"></i></button>
-                            <input type="text" class="form-control header__top--input" placeholder="Seach">
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 header__center--right">
-                        <div class="header__top--itemIcon">
-                            <a href="#">
-                                <div class="header__top--icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <div class="header__top--label">
-                                    <span>Account</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="header__top--itemIcon wish">
-                            <a href="#">
-                                <div class="header__top--icon">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                                <div class="header__top--label">
-                                    <span>Wish</span>
-                                </div>
-                            </a>
-                            <div class="header__top--count">
-                                <span>0</span>
-                            </div>
-                        </div>
-                        <div class="header__top--itemIcon cart">
-                            <a href="#">
-                                <div class="header__top--icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="header__top--label">
-                                    <span>Cart</span>
-                                </div>
-                            </a>
-                            <div class="header__top--cart">
-                                <div class="cart__item">
-                                    <div class="cart__item--title">
-                                        <a href="#">
-                                            Borderlands: The Handsome Collection
-                                        </a>
-                                        <p>1 x $59.99</p>
-                                    </div>
-                                    <div class="cart__item--image">
-                                        <a href="#">
-                                            <img src="./assets/img/product-1.jpg" alt="">
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cart__total">
-                                    <div class="cart__total--title">
-                                        <h4>total</h4>
-                                        <p>59.99$</p>
-                                    </div>
-                                    <div class="cart__total--btn">
-                                        <button class="cart__btn--viewCart">View Cart</button>
-                                        <button class="cart__btn--checkOut">
-                                            Checkout
-                                            <i class="fa fa-arrow-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header__top--count">
-                                <span>1</span>
-                            </div>
+                        <div class="header__bot--info">
+                            <i class="fab fa-medapps"></i>
+                            <span>CLEARANCE UP TO 30% OFF</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__bot">
-                <div class="header__bot--content container">
-                    <ul class="header__bot--menu">
-                        <li class="header__bot--item active"><a href="#" class="header__bot--navlink">home<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="header__bot--pages">
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/1.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        01 - furniture store
-                                    </figcaption>
+            </header>
+            <section class="categories container">
+                <div class="categories__top">
+                    <div class="row">
+                        <div class="col-lg-3 categories__top--left">
+                            <ul>
+                                <li class="categories__top--navItem categories__top--btn">
+                                    <a href="#" class="categories__top--navlink">
+                                        <i class="fa fa-bars"></i>
+                                        Browse Categories
+                                    </a>
                                 </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/2.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        02 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/3.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        03 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/4.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        04 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/5.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        05 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/6.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        06 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/7.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        07 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/8.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        08 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/9.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        09 - furniture store
-                                    </figcaption>
-                                </li>
-                                <li class="header__bot--pageItem">
-                                    <figure>
-                                        <img src="./assets/img/10.jpg" alt="">
-
-                                    </figure>
-                                    <figcaption>
-                                        10 - furniture store
-                                    </figcaption>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">shop<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="header__bot--products">
-                                <li class="header__bot--productItem">
-                                    <ul class="header__bot--productChild">
-                                        <li>
-                                            <h4><a href="#">Shop Layouts</a></h4>
+                                <li class="categories__top--navItem">
+                                    <a href="#" class="categories__top--navlink">
+                                        Playstation
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="categories__top--menu menu-col-6">
+                                        <li class="categories__top--col6">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Shop List</a></li>
-                                        <li><a href="#">Shop Grid 01 Column</a></li>
-                                        <li><a href="#">Shop Grid 02 Column</a></li>
-                                        <li><a href="#">Shop Grid 03 Column</a></li>
-                                        <li><a href="#">Shop Grid 04 Column</a></li>
-                                        <li><a href="#">Shop Grid 05 Column</a></li>
-                                        <li><a href="#">Shop Grid 06 Column</a></li>
-                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
-                                                    class="discount">hot</span></a>
+                                        <li class="categories__top--col6">
+                                            <img src="./assets/img/banner-2.jpg" alt="">
                                         </li>
-                                        <li>
-                                            <h4><a href="#">Shop Slider</a></h4>
-                                        </li>
-                                        <li><a href="#">With Left Slider</a></li>
-                                        <li><a href="#">With Right Slider</a></li>
                                     </ul>
                                 </li>
-                                <li class="header__bot--productItem">
-                                    <ul class="header__bot--productChild">
-                                        <li>
-                                            <h4><a href="#">Shop Layouts</a></h4>
+                                <li class="categories__top--navItem">
+                                    <a href="#" class="categories__top--navlink">
+                                        XBOX
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="categories__top--menu menu-col-12">
+                                        <li class="categories__top--col4">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Shop List</a></li>
-                                        <li><a href="#">Shop Grid 01 Column</a></li>
-                                        <li><a href="#">Shop Grid 02 Column</a></li>
-                                        <li><a href="#">Shop Grid 03 Column</a></li>
-                                        <li><a href="#">Shop Grid 04 Column</a></li>
-                                        <li><a href="#">Shop Grid 05 Column</a></li>
-                                        <li><a href="#">Shop Grid 06 Column</a></li>
-                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
-                                                    class="discount">new</span></a>
+                                        <li class="categories__top--col4">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
                                         </li>
-                                        <li>
-                                            <h4><a href="#">Shop Slider</a></h4>
+                                        <li class="categories__top--col4">
+                                            <img src="./assets/img/banner-1.jpg" alt="">
                                         </li>
-                                        <li><a href="#">With Left Slider</a></li>
-                                        <li><a href="#">With Right Slider</a></li>
                                     </ul>
                                 </li>
-                                <li class="header__bot--productItem">
-                                    <img src="./assets/img/menu-img-1.jpg" alt="">
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Nindendo</a></li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">PC
+                                        Gaming</a></li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">Phone
+                                        &
+                                        Tablet</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Pre-Owned</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Deals</a>
                                 </li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">Coming
+                                        soon</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Accessories</a></li>
                             </ul>
-                        </li>
-                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">product<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="header__bot--products">
-                                <li class="header__bot--productItem">
-                                    <ul class="header__bot--productChild">
-                                        <li>
-                                            <h4><a href="#">Shop Layouts</a></h4>
-                                        </li>
-                                        <li><a href="#">Shop List</a></li>
-                                        <li><a href="#">Shop Grid 01 Column</a></li>
-                                        <li><a href="#">Shop Grid 02 Column</a></li>
-                                        <li><a href="#">Shop Grid 03 Column</a></li>
-                                        <li><a href="#">Shop Grid 04 Column</a></li>
-                                        <li><a href="#">Shop Grid 05 Column</a></li>
-                                        <li><a href="#">Shop Grid 06 Column</a></li>
-                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
-                                                    class="discount">hot</span></a>
-                                        </li>
-                                        <li>
-                                            <h4><a href="#">Shop Slider</a></h4>
-                                        </li>
-                                        <li><a href="#">With Left Slider</a></li>
-                                        <li><a href="#">With Right Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header__bot--productItem">
-                                    <ul class="header__bot--productChild">
-                                        <li>
-                                            <h4><a href="#">Shop Layouts</a></h4>
-                                        </li>
-                                        <li><a href="#">Shop List</a></li>
-                                        <li><a href="#">Shop Grid 01 Column</a></li>
-                                        <li><a href="#">Shop Grid 02 Column</a></li>
-                                        <li><a href="#">Shop Grid 03 Column</a></li>
-                                        <li><a href="#">Shop Grid 04 Column</a></li>
-                                        <li><a href="#">Shop Grid 05 Column</a></li>
-                                        <li><a href="#">Shop Grid 06 Column</a></li>
-                                        <li><a href="#" class="header__bot--productDeal">Shop Market<span
-                                                    class="discount">new</span></a>
-                                        </li>
-                                        <li>
-                                            <h4><a href="#">Shop Slider</a></h4>
-                                        </li>
-                                        <li><a href="#">With Left Slider</a></li>
-                                        <li><a href="#">With Right Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header__bot--productItem">
-                                    <img src="./assets/img/menu-img-2.jpg" alt="">
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">pages<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="header__bot--submenu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Error</a></li>
-                                <li><a href="#">Coming soon</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">element<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="header__bot--submenu">
-                                <li><a href="#">Element 01</a></li>
-                                <li><a href="#">Element 02</a></li>
-                                <li><a href="#">Element 03</a></li>
-                                <li><a href="#">Element 04</a></li>
-                                <li><a href="#">Element 05</a></li>
-                                <li><a href="#">Element 06</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__bot--item"><a href="#" class="header__bot--navlink">buy molla <span
-                                    class="discount">hot</span> </a></li>
-                    </ul>
-                    <div class="header__bot--info">
-                        <i class="fab fa-medapps"></i>
-                        <span>CLEARANCE UP TO 30% OFF</span>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6 categories__top--center">
+                            <div class="categories__top--card">
+                                <div class="categories__top--image">
+                                    <img src="./assets/img/banner-1-1.jpg" alt="">
+                                </div>
+                                <div class="categories__top--text">
+                                    <h5>PRE-ORDER NOW</h5>
+                                    <h3>BORDERLANDS 3</h3>
+                                    <button class="btn-orange">Pre-Order Now<i
+                                            class="fa fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 categories__top--right">
+                            <div class="row" id="direction-item">
+                                <div class="col-sm-12 categories__top--item">
+                                    <div class="categories__top--card">
+                                        <div class="categories__top--image">
+                                            <img src="./assets/img/banner-2-1.jpg" alt="">
+                                        </div>
+                                        <div class="categories__top--text">
+                                            <h5>WEEKEND OFFER</h5>
+                                            <img src="./assets/img/banner-2-title.png" alt="">
+                                            <p>SAVE <span>$19.99</span></p>
+                                            <button class="btn-orange">Buy Now<i
+                                                    class="fa fa-long-arrow-alt-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 row pe-0">
+                                    <div class="col-6 col-md-12 pe-0 categories__top--item">
+                                        <div class="categories__top--card card-bottom ">
+                                            <div class="categories__top--image">
+                                                <img src="./assets/img/banner-3.jpg" alt="">
+                                            </div>
+                                            <div class="categories__top--text text-bottom">
+                                                <img src="./assets/img/banner-3-title.png" alt="">
+                                                <br>
+                                                <button class="btn-orange">Buy Now<i
+                                                        class="fa fa-long-arrow-alt-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12 categories__top--item card-mobile d-md-none pe-0">
+                                        <div class="categories__top--card card-bottom">
+                                            <div class="categories__top--image">
+                                                <img src="./assets/img/banner-4.jpg" alt="">
+                                            </div>
+                                            <div class="categories__top--text text-bottom reverse">
+                                                <h5>WEEKEND SALE</h5>
+                                                <img src="./assets/img/banner-4-title.png" alt="">
+                                                <p>25% OFF</p>
+                                                <button class="btn-orange">Buy Now<i
+                                                        class="fa fa-long-arrow-alt-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+                <div class="categories__bot my-3">
+                    <div class="row">
+                        <div class="col-md-3 categories__bot--left">
+                            <div class="categories__bot--card">
+                                <div class="categories__bot--image">
+                                    <img src="./assets/img/banner-4.jpg" class="bot-image" alt="">
+                                </div>
+                                <div class="categories__bot--text">
+                                    <p>WEEKEND SALE</p>
+                                    <img src="./assets/img/banner-4-title.png" alt="">
+                                    <h5>25% OFF</h5>
+                                    <button class="btn-orange">Buy Now<i
+                                            class="fa fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="categories__bot--right">
+                                <div class="categories__bot--card">
+                                    <div class="categories__bot--image">
+                                        <img src="./assets/img/banner-5.jpg" class="bot-image" alt="">
+                                    </div>
+                                    <div class="categories__bot--text">
+                                        <p>AMAZING VALUE</p>
+                                        <img src="./assets/img/banner-5-title.png" alt="">
+                                        <br>
+                                        <button class="btn-orange">Pre-Order Now<i
+                                                class="fa fa-long-arrow-alt-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
     <div class="menu__mobile" id="menu-mobile">
         <div class="menu__mobile--top">
@@ -571,77 +769,8 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    <script>
-
-        document.getElementById('showMenu').addEventListener('click', function (e) {
-            var menu = document.getElementById('menu-mobile');
-            var header = document.getElementById('header');
-            var overlay = document.getElementById('overlay');
-            menu.classList.add('menu__mobile--show');
-            header.classList.add('header__show');
-            overlay.style.display = "block";
-        });
-
-        document.getElementById('menu__mobile--close').addEventListener('click', function (e) {
-            isRemove();
-        });
-
-        document.getElementById('overlay').addEventListener('click', function (e) {
-            isRemove();
-        });
-
-        function isRemove() {
-            var menu = document.getElementById('menu-mobile');
-            var header = document.getElementById('header');
-            var overlay = document.getElementById('overlay');
-            menu.classList.remove('menu__mobile--show');
-            header.classList.remove('header__show');
-            overlay.style.display = "none";
-        }
-
-        window.addEventListener("resize", function (event) {
-            var header = document.getElementById('header');
-            if (header.clientWidth > 1199) {
-                isRemove();
-            }
-        })
-
-        var clickSubmenu = function (index) {
-            var submenu = document.getElementsByClassName('submenu--item');
-            var childmenu = document.getElementsByClassName('childmenu');
-            for (let i = 0; i < submenu.length; i++) {
-                if (i === index) {
-                    childmenu[i].classList.toggle('childmenu__show');
-                }
-            }
-        }
-
-
-        // var showMenu = function (id) {
-        //     var menu = document.getElementById('menu' + id);
-        //     menu.classList.toggle('top__show');
-        //     var dropdowns = document.getElementsByClassName("top__show");
-        //     for (var i = 0; i < dropdowns.length; i++) {
-        //         if (!(i === dropdowns.length - 1)) {
-        //             var openDropdown = dropdowns[i];
-        //             if (openDropdown.classList.contains('top__show')) {
-        //                 openDropdown.classList.remove('top__show');
-        //             }
-        //         }
-        //     }
-        // }
-        // window.onclick = function (event) {
-        //     if (!event.target.matches('.top__navlink')) {
-        //         var dropdowns = document.getElementsByClassName("top__menu");
-        //         for (var i = 0; i < dropdowns.length; i++) {
-        //             var openDropdown = dropdowns[i];
-        //             if (openDropdown.classList.contains('top__show')) {
-        //                 openDropdown.classList.remove('top__show');
-        //             }
-        //         }
-        //     }
-        // }
-    </script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/categories.js"></script>
 </body>
 
 </html>
