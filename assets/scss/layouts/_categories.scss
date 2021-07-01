@@ -225,7 +225,6 @@
                 }
             }
         }
-
         .categories__bot--right {
             .categories__bot--card {
                 position: relative;
@@ -258,6 +257,47 @@
                 }
             }
         }
+        .categories__bot--listIcon {
+            padding: $pd-3 $pd-1;
+            cursor: pointer;
+            .categories__bot--itemIcon {
+                display: flex;
+                position: relative;
+                padding-left: 0;
+                .categories__bot--icon {
+                    width: 15%;
+                    @include styleText($fs-2 + 10,#c5c1c1,0,0,$fw-normal);
+                    padding-top: $pd-0;
+                }
+                .categories__bot--textIcon {
+                    width: 85%;
+                    padding-left: $pd-1;
+                    h4 {
+                        @include styleText($fs-0 + 2,$color-default,0,0,$fw-3);
+                        padding-bottom: $pd-0;
+                    }
+                    p {
+                        @include styleText($fs-0 - 1,rgba($color-text,0.6),0,0,$fw-2);
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 20%;
+                    transform: translate(0,-50%);
+                    height: 100%;
+                    width: 1px;
+                    background-color: #c5c1c1;
+                }
+            }
+            .last {
+                &::before {
+                    height: 0;
+                    width: 0;
+                }
+            }
+        }
     }
 }
 
@@ -281,6 +321,25 @@
                 }
             }
         }
+        .categories__bot {
+            .categories__bot--listIcon {
+                .categories__bot--itemIcon {
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .categories__bot--icon {
+                        width: 100%;
+                        padding-bottom: 10px;
+                    }
+                    .categories__bot--textIcon {
+                        width: 100%;
+                    }
+                    &::before {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -293,7 +352,6 @@
             }
         }
     }
-
     .categories {
         .categories__bot {
             .categories__bot--left {
