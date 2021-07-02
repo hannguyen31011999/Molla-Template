@@ -40,3 +40,16 @@
         background: $bg;
     }
 }
+
+@mixin textSlider($dx,$dy,$direction) {
+    position: absolute;
+    top: $dy;
+    text-transform: uppercase;
+    @if ($direction == 'left'){
+        left: $dx;
+        text-align: left;
+    }@elseif ($direction == 'right')  {
+        text-align: right;
+        right: $dx;
+    }
+}

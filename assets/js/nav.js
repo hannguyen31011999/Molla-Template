@@ -22,8 +22,8 @@ $('.product__info--list').slick({
     autoplay: false,
     autoplaySpeed: 2000,
     dots: true,
-    prevArrow: false,
-    nextArrow: false,
+    prevArrow: "<img src='./assets/img/back-session.png' class='slick-prev' alt=''>",
+    nextArrow: "<img src='./assets/img/next-session.png' class='slick-next' alt=''>",
     responsive: [
         {
             breakpoint: 1200,
