@@ -265,6 +265,52 @@
     }
 }
 
+
+@include responsive('medium')
+{
+    .product {
+        .product__title {
+            padding: $pd-1;
+            .product__title--left {
+                width: 60%;
+                h1 {
+                    @include styleText($fs-1 - 3,$color-default,0,0,$fw-4);
+                }
+            }
+            .product__title--right {
+                width: 40%;
+                a {
+                    @include styleText($fs-0 - 2,$color-text,0,0,$fw-normal);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 419px) {
+    .product {
+        .product__title {
+            margin-top: $mg-0;
+            flex-wrap: wrap;
+            .product__title--left {
+                width: 100%;
+                h1 {
+                    @include styleText($fs-0 + 2,$color-default,0,0,$fw-4);
+                }
+            }
+            .product__title--right {
+                margin-top: $mg-0;
+                text-align: left;
+                width: 100%;
+                a {
+                    @include styleText($fs-0 - 3,$color-text,0,0,$fw-normal);
+                }
+            }
+        }
+    }
+}
+
 @include responsive('small')
 {
     .product__content {
